@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GildaDigital - Portal de Autoasistencia</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #0b2545;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 4px solid #134074;
+        }
+
+        .logo-placeholder {
+            background-color: #134074;
+            padding: 10px 15px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.95rem;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(11, 37, 69, 0.85), rgba(11, 37, 69, 0.85)), url('https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h1 {
+            font-size: 2.3rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+            border-top: 5px solid #134074;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+            color: #0b2545;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.4;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #134074;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #0b2545;
+        }
+
+        .whatsapp-widget {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            font-size: 0.95rem;
+            z-index: 1000;
+        }
+
+        .whatsapp-widget:hover {
+            background-color: #128C7E;
+        }
+
+        footer {
+            background-color: #0b2545;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.85rem;
+            margin-top: 60px;
+            border-top: 4px solid #134074;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo-placeholder">🏫 IESTP GILDA LILIANA BALLIVIAN ROSADO</div>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Ayuda</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>¡Bienvenido a GildaDigital!</h1>
+        <p>Portal Técnico de Autoasistencia Administrativa. Diseñado para optimizar tus trámites institucionales, evitar tiempos de espera y centralizar la información académica en un solo lugar.</p>
+    </section>
+
+    <div class="container">
+        <div class="grid">
+            <div class="card">
+                <div class="icon">📅</div>
+                <h3>Horarios Académicos</h3>
+                <p>Consulta las mallas de horarios vigentes divididas por ciclos, carreras de estudio y turnos.</p>
+                <a href="#" class="btn" onclick="alert('Simulación: Abriendo PDF de Horarios del Ciclo Actual')">Ver Horarios</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">📝</div>
+                <h3>Proceso de Matrícula</h3>
+                <p>Requisitos oficiales, cronograma detallado de fechas y flujograma del paso a paso digital.</p>
+                <a href="#" class="btn" onclick="alert('Simulación: Abriendo Guía de Matrícula Interactiva')">Ver Requisitos</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">💳</div>
+                <h3>Tasas y Canales de Pago</h3>
+                <p>Verifica los montos de tasas académicas y cuentas bancarias oficiales para transferencias bancarias o Yape.</p>
+                <a href="#" class="btn" onclick="alert('Simulación: Mostrando Cuentas BCP/Yape/Plin del Instituto')">Ver Cuentas</a>
+            </div>
+
+            <div class="card">
+                <div class="icon">📜</div>
+                <h3>Certificados Express</h3>
+                <p>Inicia trámites documentarios para constancias de estudio, certificados de notas o expedientes.</p>
+                <a href="#" class="btn" onclick="alert('Simulación: Redirigiendo a Formulario de Solicitud Documentaria Express')">Iniciar Trámite</a>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://wa.me/51999999999?text=Hola,%20necesito%20información%20sobre%20los%20trámites" target="_blank" class="whatsapp-widget">
+        💬 ¿Dudas? Consulta a GildaBot
+    </a>
+
+    <footer>
+        <p>© 2026 Programa de Estudios de Gestión Administrativa - III Ciclo</p>
+        <p style="margin-top: 5px; opacity: 0.7;">Proyecto desarrollado bajo metodología Design Thinking para la Feria de Innovación Tecnológica</p>
+    </footer>
+
+</body>
+</html>
